@@ -5,27 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Haider Raza</title>
-
-    <!-- Stylesheets used in this site -->
-    <link rel="stylesheet" href="/stylesheets/main.css" />
-    <link rel="stylesheet" href="/stylesheets/mobile.css" media="(max-width: 600px)" />
-    <link rel="stylesheet" href="/stylesheets/tablet.css" media="(min-width: 601px) and (max-width: 1024px)" />
-    <link rel="stylesheet" href="/stylesheets/laptop.css" media="(min-width: 1025px)" />
 </head>
 <body>
     <!-- The header and navigation section for the site -->
     <header class="site-header gradient-hero">
         <div class="container">
-            <h1>Haider Raza</h1>
-            <nav aria-label="Primary">
-                <ul class="nav">
-                    <!-- Pages linked to this site along with the page marked -->
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About Me</a></li>
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="contact" aria-current="page">Contact</a></li>
-                </ul>
-            </nav>
+            <%- include('partials/header') %>
+            <%- include('partials/main_nav') %>
         </div>
     </header>
 
@@ -84,13 +70,6 @@
 
         </section>
     </main>
-
-    <!-- Footer section -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>Contact: <a href="mailto:you@example.com">haidz768@gmail.com</a></p>
-            <p>© 2025 Haider Raza. All rights reserved.</p>
-        </div>
-    </footer>
 </body>
+    <%- include('partials/footer') %>
 </html>

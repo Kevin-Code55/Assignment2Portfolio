@@ -1,75 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata and viewpoint -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Haider Raza</title>
+    <title>{Kevin} Portfolio - Home</title>
+<%- include('partials/header') %>
+
 </head>
 <body>
-    <!-- The header and navigation section for the site -->
-    <header class="site-header gradient-hero">
-        <div class="container">
-            <%- include('partials/header') %>
-            <%- include('partials/main_nav') %>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="logo">
+                <img src="images/myphoto.png" alt="Photo of Kevin" width="50">
+
         </div>
+        <nav class="nav">
+            <ul class="clearfix">
+                <li class="element"><a href="index.html">Home</a></li>
+                <li class="element"><a href="about.html">About</a></li>
+                <li class="element"><a href="projects.html">Projects</a></li>
+                <li class="element"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!--Main content for contact forms -->
-    <main id="main" class="container">
-        <section>
-            <h2>Contact Me</h2>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Send a message</legend>
+    <!-- Home Section -->
+    <section id="contact.html">
+        <h2>Contact Me ! </h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type = "text" id="name" name ="name" required><br><br>
 
-                    <!-- Name -->
-                    <label for="name">Name</label>
-                    <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    required
-                    minlength="2"
-                    pattern="^[A-Za-z][A-Za-z\s'\-]{1,}$"
-                    title="Please enter your full name (letters, spaces, apostrophes, or hyphens)."
-                    />
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"  name="email" required><br><br>
 
-                    <!-- Email -->
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" required />
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required></form>Have a Nice Day!<br><br>
 
-                    <!-- Phone -->
-                    <label for="phone">Cell No.</label>
-                    <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    inputmode="tel"
-                    pattern="^\s*\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}\s*$"
-                    title="Enter a 10-digit phone number (e.g., 416-555-1234)"
-                    required
-                    />
-
-                    <!-- Comments -->
-                    <label for="comments">Comments</label>
-                    <textarea
-                    id="comments"
-                    name="comments"
-                    rows="5"
-                    required
-                    minlength="10"
-                    maxlength="1000"
-                    placeholder="Write at least 10 characters..."
-                    ></textarea>
-
-                    <!-- Submit -->
-                    <button type="submit">Submit</button>
-                </fieldset>
-                </form>
-
-        </section>
-    </main>
+            <form><button type="submit">Submit</button></form>
+</section>
 </body>
-    <%- include('partials/footer') %>
+<%- include('partials/footer') %>
 </html>

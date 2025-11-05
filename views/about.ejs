@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Page metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Haider Raza</title>
+    <title> Kevin Portfolio</title>
+<%- include('partials/header') %>
 </head>
 <body>
-    <!-- Header and Site Navigation-->
-    <header class="site-header gradient-hero">
-        <div class="container">
-            <%- include('partials/header') %>
-            <%- include('partials/main_nav') %>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="logo">
+            <img src="/images/myphoto.png" alt="Photo of Kevin" width="50"/>
         </div>
+        <nav class="nav">
+            <ul class="clearfix">
+                <li class="element"><a href="index.html">Home</a></li>
+                <li class="element"><a href="about.html">About</a></li>
+                <li class="element"><a href="projects.html">Projects</a></li>
+                <li class="element"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Main content area -->
-    <main>
-        <article>
-            <!-- My profile section -->
-            <h2>About Me</h2>
-            <img class="profile" src="/images/Image.jpg" alt="Portrait of Your Name" />
-            <p>I am a 2nd year student at Ontario Tech studying Networking and IT Security. I am aiming for a goal to pursue a career in the field of cybersecurity and work towards becoming a security analyst. </p>
+    <!-- About Section -->
+    <section id="about">
+        <h1>Who I Am</h1>
+        <img src="/images/myphoto.png" alt="Photo of Kevin" width="300" />
 
-            <!-- Video section -->
-            <h3>Intro Video (45-60s)</h3>
-            <video controls poster="/images/poster.jpg" width="100%">
-                <source src="Video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-        </article>
-    </main>
+    <!-- Intro Text-->
+        <p id="first">My name is Kevin, I am a second year student studying at university, I have been coding since the 3rd grade using scratch JR.</p>
+        <p class="second">I have always been fascinated by how computers work and how they can be used, this brought me to the field of networking and now I'm currently pursuing a degree in Networking Manegement and IT Security.</p>
+
+    <!-- Video -->
+    <video controls width="400">
+    <source src="/images/websitevideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>      
+
+
 </body>
- <%- include('partials/header') %>
+<%- include('partials/footer') %>
 </html>

@@ -1,58 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{Kevin} Portfolio - Home</title>
-
-
-    <!-- Linked CSS file -->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 601px) and (max-width: 900px)">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
-    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 901px)">
-
-
-</head>
-<body>
-    <!-- Header / Navigation -->
-    <header class="header">
-        <div class="logo">
-            <img src="images/myphoto.png" alt="Photo of Kevin" width="50"/>
-        </div>
 <%- include('partials/header') %>
-    </header>
 
+<%- include('partials/main_nav'); %>
+    
+    
     <!-- Projects Section -->
-    <section id="projects">
+                 
+    <!-- Example Project -->
+
+    <section id="projects" class="container mt-4">
         <h2>My Projects</h2>
-        <div class="project-list clearfix">
-            <!-- Example Project -->
-            <div class="project-item">
-                <h3>Auto Sorting Algo 1</h3>
-                <p>A python script that sorts an array of numbers from smallest to largest.</p>
+
+        <div class="card text-dark my-3">
+            <div class="card-body">
+                <h5 class="card-title">Auto Sorting Algo1</h5>
+                <p class="card-text">A python script that sorts an array of numbers from smallest to largest.</p>
             </div>
+        </div>  
+            <!-- Example Project -->
+        <div class="card text-dark my-3">
+            <div class="card-body">
+                <h5 class="card-title">Data Base 1</h5>
+                <p class="card-text">A group project where we have built a data base to support a website.</p>
+            </div>
+        </div>  
+
 
             <!-- Example Project -->
-            <div class="project-item">
-                <h3>Data Base 2</h3>
-                <p>A group project where we have built a data base to support a website.</p>
+        <div class="card text-dark my-3">
+            <div class="card-body">
+                <h5 class="card-title">Interactive Website 3</h5>
+                <p class="card-text">A interactive website that shows the OSINT Framework.</p>
             </div>
-
+        </div>  
             <!-- Example Project -->
-            <div class="project-item">
-                <h3>Interactive Website 3</h3>
-                <p>A interactive website that shows the OSINT Framework.</p>
-            </div>
-
-            <!-- Example Project -->
-            <div class="project-item">
-                <h3>Custom Image generator 4</h3>
-                <p> A image generator that was based on an open source AI using stable Defussion</p>.</p>
+        <div class="card text-dark my-3">
+            <div class="card-body">
+                <h5 class="card-title">Custom Image generator 4</h5>
+                <p class="card-text">A image generator that was based on an open source AI using stable Defussion.</p>
             </div>
         </div>
+
     </section>
 
-</body>
 <%- include('partials/footer') %>
-</html>
